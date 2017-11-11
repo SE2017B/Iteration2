@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22f2e026-c743-4978-b1cb-98ec4e205898" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/fxml/Filter.fxml" afterPath="$PROJECT_DIR$/out/production/Iteration1/fxml/Filter.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/FilterController.java" afterPath="$PROJECT_DIR$/src/controllers/FilterController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fxml/Filter.fxml" afterPath="$PROJECT_DIR$/src/fxml/Filter.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fxml/Main.fxml" afterPath="$PROJECT_DIR$/src/fxml/Main.fxml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="FilterController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/FilterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="338">
+              <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -262,12 +262,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510430279815</updated>
-      <workItem from="1510430281126" duration="3228000" />
+      <workItem from="1510430281126" duration="4011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3228000" />
+    <option name="totallyTimeSpent" value="4011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1470" height="1088" extended-state="0" />
@@ -339,8 +339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/FilterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="338">
+          <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

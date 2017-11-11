@@ -63,9 +63,9 @@
                                     <Image url="@../images/SecondFloorNOICONS.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fx:id="bathIcon1" fitHeight="20.0" fitWidth="20.0" layoutX="192.0" layoutY="204.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="200.0">
+                              <ImageView fx:id="bathIconW1" fitHeight="18.0" fitWidth="12.0" layoutX="193.0" layoutY="217.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="200.0">
                                  <image>
-                                    <Image url="@../images/WC.png" />
+                                    <Image url="@../images/WCwomen.png" />
                                  </image>
                               </ImageView>
                               <ImageView fx:id="exitIcon2" fitHeight="15.0" fitWidth="11.0" layoutX="320.0" layoutY="196.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="200.0">
@@ -76,6 +76,21 @@
                               <ImageView fx:id="exitIcon1" fitHeight="15.0" fitWidth="11.0" layoutX="256.0" layoutY="281.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="200.0">
                                  <image>
                                     <Image url="@../images/Exit%20Icon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="bathIconM1" fitHeight="18.0" fitWidth="13.0" layoutX="392.0" layoutY="196.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WCmen.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="bathIconF1" fitHeight="18.0" fitWidth="13.0" layoutX="261.0" layoutY="286.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="300.0">
+                                 <image>
+                                    <Image url="@../images/WCall.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="bathIconF2" fitHeight="18.0" fitWidth="12.0" layoutX="257.0" layoutY="222.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" translateX="300.0">
+                                 <image>
+                                    <Image url="@../images/WCall.png" />
                                  </image>
                               </ImageView>
                            </children>

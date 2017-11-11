@@ -24,7 +24,14 @@ public class FilterController implements ControllableScreen{
     private Button btncancel;
 
     @FXML
-    private ImageView bathIcon1;
+    private ImageView bathIconM1;
+    @FXML
+    private ImageView bathIconW1;
+    @FXML
+    private ImageView bathIconF1;
+
+    @FXML
+    private ImageView bathIconF2;
 
     @FXML
     private ImageView exitIcon1;
@@ -42,12 +49,18 @@ public class FilterController implements ControllableScreen{
     {
         if(checkBoxBathrooms.isSelected())
         {
-            bathIcon1.setOpacity(1.0);
+            bathIconM1.setOpacity(1.0);
+            bathIconW1.setOpacity(1.0);
+            bathIconF1.setOpacity(1.0);
+            bathIconF2.setOpacity(1.0);
             System.out.println("bathroom is checked");
         }
         else
         {
-            bathIcon1.setOpacity(0.0);
+            bathIconM1.setOpacity(0.0);
+            bathIconW1.setOpacity(0.0);
+            bathIconF1.setOpacity(0.0);
+            bathIconF2.setOpacity(0.0);
         }
     }
     @FXML

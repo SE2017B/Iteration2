@@ -41,6 +41,8 @@ public class PathController implements ControllableScreen{
     @FXML
     private MenuButton mbend;
 
+    public void init(){}
+
     public void enterPressed(ActionEvent e)
     {
         System.out.println("Enter Pressed");

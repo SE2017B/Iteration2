@@ -19,6 +19,8 @@ public class AdminMenuController implements ControllableScreen{
     @FXML
     private Button btnCancel;
 
+    public void init(){}
+
     public void servicePressed(ActionEvent e){
         System.out.println("Service Pressed");
         parent.setScreen(ScreenController.RequestID);

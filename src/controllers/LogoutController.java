@@ -8,4 +8,6 @@ public class LogoutController implements ControllableScreen {
         this.parent = parent;
     }
 
+    public void init(){}
+
 }

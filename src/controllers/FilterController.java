@@ -21,6 +21,8 @@ public class FilterController implements ControllableScreen{
     @FXML
     private Button btncancel;
 
+    public void init(){}
+
     public void cancelPressed(ActionEvent e)
     {
         System.out.println("Cancel Pressed");

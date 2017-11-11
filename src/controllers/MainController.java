@@ -32,6 +32,8 @@ public class MainController implements ControllableScreen{
     @FXML
     private Button btnfilter;
 
+    public void init(){}
+
     public void loginPressed(ActionEvent e){
         System.out.println("Login Pressed");
         parent.setScreen(ScreenController.LoginID);

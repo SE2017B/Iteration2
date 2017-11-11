@@ -9,7 +9,6 @@ public class Staff{
     private int ID;
 
     public Staff(String username, String password, String jobTitle, String fullName, int ID){
-
     }
 
     public String getFullName() {

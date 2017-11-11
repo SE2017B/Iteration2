@@ -1,14 +1,21 @@
 package controllers;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.MenuButton;
+import javafx.scene.control.*;
+import javafx.scene.control.Labeled;
+import service.ServiceRequest;
+import service.Staff;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class RequestController implements ControllableScreen{
     private ScreenController parent;
 
+    private ArrayList<Staff> staff;
     public void setParentController(ScreenController parent){
         this.parent = parent;
     }
@@ -23,13 +30,22 @@ public class RequestController implements ControllableScreen{
     private MenuButton serviceDropDown;
 
     @FXML
-    private MenuButton staffDropDown;
+    private ChoiceBox staffDropDown;
 
     @FXML
-    private MenuButton timeDropDown;
+    private MenuButton hourDropDown;
+
+    @FXML
+    private MenuButton minDropDown;
+
+    @FXML
+    private MenuButton meridDropDown;
 
     @FXML
     private DatePicker dateMenu;
+
+    public void init(){
+    }
 
     public void createPressed(ActionEvent e){
         System.out.println("Create Pressed");
@@ -40,16 +56,40 @@ public class RequestController implements ControllableScreen{
         parent.setScreen(ScreenController.AdminMenuID);
     }
 
+
     public void serviceSelected(ActionEvent e){
         System.out.println("Service Selected");
+        String serviceType = ((MenuItem) e.getSource()).getText();
+        serviceDropDown.setText(serviceType);
+        staff = ServiceRequest.getStaffForServiceType(serviceType);
+        ArrayList<String> staffNames = new ArrayList<String>();
+        for(Staff member : staff){
+            staffNames.add(member.getFullName());
+        }
+        if(staffNames.size() != 0) {
+            System.out.println(FXCollections.observableList(staffNames));
+            staffDropDown.setItems(FXCollections.observableList(staffNames));
+            staffDropDown.setDisable(false);
+        }
+
     }
 
-    public void staffSelected(ActionEvent e){
-        System.out.println("Staff Selected");
+    public void hourSelected(ActionEvent e){
+        System.out.println("Hour Selected");
+        String hour = ((MenuItem) e.getSource()).getText();
+        hourDropDown.setText(hour);
     }
 
-    public void timeSelected(ActionEvent e){
-        System.out.println("Time Selected");
+    public void minSelected(ActionEvent e){
+        System.out.println("Min Selected");
+        String min = ((MenuItem) e.getSource()).getText();
+        minDropDown.setText(min);
+    }
+
+    public void meridSelected(ActionEvent e){
+        System.out.println("Merid Selected");
+        String merid = ((MenuItem) e.getSource()).getText();
+        meridDropDown.setText(merid);
     }
 
     public void dateSelected(ActionEvent e){

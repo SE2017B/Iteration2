@@ -12,6 +12,7 @@ import java.util.ArrayList;
 public class PathController implements ControllableScreen{
     private ScreenController parent;
 
+
     public void setParentController(ScreenController parent){
         this.parent = parent;
     }

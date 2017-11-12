@@ -1,5 +1,6 @@
 package controllers;
 
+import a_star.HospitalMap;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -10,10 +11,18 @@ import service.ServiceRequest;
 import service.Staff;
 
 import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class RequestController implements ControllableScreen{
     private ScreenController parent;
+    private String serviceType;
+    private String hour;
+    private String min;
+    private String merid;
+    private Staff staffMember;
+    private LocalDate date;
+
 
     private ArrayList<Staff> staff;
     public void setParentController(ScreenController parent){
@@ -44,11 +53,20 @@ public class RequestController implements ControllableScreen{
     @FXML
     private DatePicker dateMenu;
 
+    @FXML
+    private Label infoLabel;
+
+    @FXML
+    private TextArea infoText;
+
     public void init(){
     }
 
     public void createPressed(ActionEvent e){
-        System.out.println("Create Pressed");
+        staffMember = (Staff)staffDropDown.getValue();\
+
+        HospitalMap.
+        System.out.println("Create Pressed: " + staffMember);
         parent.setScreen(ScreenController.AdminMenuID);
     }
     public void cancelPressed(ActionEvent e){
@@ -59,17 +77,22 @@ public class RequestController implements ControllableScreen{
 
     public void serviceSelected(ActionEvent e){
         System.out.println("Service Selected");
-        String serviceType = ((MenuItem) e.getSource()).getText();
+        serviceType = ((MenuItem) e.getSource()).getText();
         serviceDropDown.setText(serviceType);
         staff = ServiceRequest.getStaffForServiceType(serviceType);
-        ArrayList<String> staffNames = new ArrayList<String>();
-        for(Staff member : staff){
-            staffNames.add(member.getFullName());
-        }
-        if(staffNames.size() != 0) {
-            System.out.println(FXCollections.observableList(staffNames));
-            staffDropDown.setItems(FXCollections.observableList(staffNames));
+        if(staff.size() != 0) {
+            staffDropDown.setItems(FXCollections.observableList(staff));
             staffDropDown.setDisable(false);
+        }
+
+        if(serviceType.equals("Food")){
+            infoLabel.setText("Food Type");
+            infoLabel.setVisible(true);
+            infoText.setVisible(true);
+        }
+        else{
+            infoLabel.setVisible(false);
+            infoText.setVisible(false);
         }
 
     }
@@ -93,6 +116,7 @@ public class RequestController implements ControllableScreen{
     }
 
     public void dateSelected(ActionEvent e){
-        System.out.println("Date Selected");
+        System.out.println("Date Selected" );
+        date = ((DatePicker)e.getSource()).getValue();
     }
 }

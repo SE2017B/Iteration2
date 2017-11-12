@@ -54,4 +54,8 @@ public class Staff{
     public void changePassword(String newPass, String oldPass){
 
     }
+
+    public String toString(){
+        return fullName;
+    }
 }

@@ -15,12 +15,10 @@ public class HospitalMap{
         map.put(id, node);
     }
 
-    public List<Node> findPath(Node start, Node end){
+    public ArrayList<Node> findPath(Node start, Node end){
         //TODO
         //Also determine heuristic..should be manhattan but we can also use euclydian...up to the team
-        ArrayList<Node> stub = new ArrayList<Node>();
-        stub.add(new Node());
-        return stub;
+        return getNodesAsArrayList();
 
     }
 
@@ -35,5 +33,24 @@ public class HospitalMap{
         double yDeltaSquared = Math.pow((end.getY()-start.getY()), 2);
         double distance = Math.sqrt(xDeltaSquared + yDeltaSquared);
         return (int)Math.round(distance);
+    }
+
+    public ArrayList<Node> getNodesAsArrayList(){
+        //STUB
+        ArrayList<Node> stub = new ArrayList<Node>();
+        Node a = new Node(400,200);
+        a.setName("a");
+        stub.add(a);
+        Node b = new Node(600,200);
+        b.setName("b");
+        stub.add(b);
+        Node c = new Node(600,400);
+        c.setName("c");
+        stub.add(c);
+        Node d = new Node(400,400);
+        d.setName("d");
+        stub.add(d);
+        return stub;
+
     }
 }

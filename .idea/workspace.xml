@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22f2e026-c743-4978-b1cb-98ec4e205898" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/AddNodeController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/AddNodeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/AdminMenuController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/AdminMenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/ControllableScreen.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/ControllableScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/ECSController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/ECSController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/FilterController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/FilterController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/LoginController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/LogoutController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/LogoutController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/MainController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/RequestController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/RequestController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/controllers/ScreenController.class" afterPath="$PROJECT_DIR$/out/production/Iteration1/controllers/ScreenController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/fxml/Path.fxml" afterPath="$PROJECT_DIR$/out/production/Iteration1/fxml/Path.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Iteration1/fxml/Request.fxml" afterPath="$PROJECT_DIR$/out/production/Iteration1/fxml/Request.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/PathController.java" afterPath="$PROJECT_DIR$/src/controllers/PathController.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +17,7 @@
       <file leaf-file-name="FilterController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/FilterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
+            <state relative-caret-position="534">
               <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="65" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -37,14 +26,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PathController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PathController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controllers/PathController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="70" column="1" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+            <state relative-caret-position="63">
+              <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1820#1821#0" expanded="true" />
+                <element signature="e#1876#1877#0" expanded="true" />
+                <marker date="1510523409400" expanded="false" signature="1141:1149" ph="&lt;~&gt;" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/a_star/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HospitalMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/a_star/HospitalMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-208">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Staff.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/Staff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/ServiceRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,24 +94,14 @@
       <file leaf-file-name="RequestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/RequestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="464">
+              <caret line="76" column="44" lean-forward="true" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScreenController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/ScreenController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -89,30 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogoutController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/LogoutController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kioskEngine/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="128">
               <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding />
             </state>
@@ -181,13 +183,31 @@
               <item name="Iteration1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Iteration1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="a_star" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Iteration1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Iteration1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Iteration1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Iteration1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Iteration1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Iteration1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="kioskEngine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Iteration1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Iteration1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,12 +347,12 @@
       <updated>1510430279815</updated>
       <workItem from="1510430281126" duration="7739000" />
       <workItem from="1510518039111" duration="1409000" />
-      <workItem from="1510521036698" duration="38000" />
+      <workItem from="1510521036698" duration="2374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9186000" />
+    <option name="totallyTimeSpent" value="11522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1753" height="1088" extended-state="0" />
@@ -394,6 +414,9 @@
           <caret line="70" column="1" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <marker date="1510523409400" expanded="false" signature="1141:1149" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -494,59 +517,10 @@
           <caret line="70" column="1" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <marker date="1510523409400" expanded="false" signature="1141:1149" ph="&lt;~&gt;" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kioskEngine/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/FilterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="65" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/ScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kioskEngine/KioskEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/PathController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="70" column="1" lean-forward="false" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/RequestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,11 +540,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fxml/Path.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510522440056" expanded="true" signature="4858:4891" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="4858:4921" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="4858:4948" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="4858:4974" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="4858:5728" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="4858:5747" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="4858:5762" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="4858:5776" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="5065:5711" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="5091:5685" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="5304:5658" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="5335:5626" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="5407:5594" ph="..." />
+            <marker date="1510522440056" expanded="true" signature="5442:5557" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/ScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/ControllableScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/ECSController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/FilterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="65" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kioskEngine/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kioskEngine/KioskEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/RequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="76" column="44" lean-forward="true" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/ServiceRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a_star/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a_star/HospitalMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/PathController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="67" column="44" lean-forward="true" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <marker date="1510523409400" expanded="false" signature="1141:1149" ph="&lt;~&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>

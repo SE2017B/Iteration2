@@ -63,9 +63,8 @@ public class RequestController implements ControllableScreen{
     }
 
     public void createPressed(ActionEvent e){
-        staffMember = (Staff)staffDropDown.getValue();\
+        staffMember = (Staff)staffDropDown.getValue();
 
-        HospitalMap.
         System.out.println("Create Pressed: " + staffMember);
         parent.setScreen(ScreenController.AdminMenuID);
     }

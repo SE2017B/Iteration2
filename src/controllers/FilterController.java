@@ -25,6 +25,8 @@ public class FilterController implements ControllableScreen{
 
     public void init(){}
 
+    public void onShow(){}
+
     @FXML
     private ImageView bathIconM1;
     @FXML

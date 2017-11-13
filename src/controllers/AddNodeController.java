@@ -133,6 +133,7 @@ public class AddNodeController implements ControllableScreen{
 
     public void init(){}
 
+    public void onShow(){}
 
 
     public void enterPressed(ActionEvent e){

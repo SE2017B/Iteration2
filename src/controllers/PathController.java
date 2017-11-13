@@ -73,6 +73,14 @@ public class PathController implements ControllableScreen{
         endChoice.setItems(FXCollections.observableList(nodes));
     }
 
+    public void onShow(){
+        for (Line line: lines) {
+            line.setVisible(false);
+            mapPane.getChildren().remove(line);
+        }
+        lines = new ArrayList<>();
+    }
+
     public void startSelected(ActionEvent e){
 //        //Start = ServiceRequest.getStaffForServiceType(serviceType);
 //        ArrayList<String> destinations = new ArrayList<String>();

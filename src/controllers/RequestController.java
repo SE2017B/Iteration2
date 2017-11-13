@@ -62,6 +62,10 @@ public class RequestController implements ControllableScreen{
     public void init(){
     }
 
+    public void onShow(){
+
+    }
+
     public void createPressed(ActionEvent e){
         staffMember = (Staff)staffDropDown.getValue();
 

@@ -34,6 +34,8 @@ public class MainController implements ControllableScreen{
 
     public void init(){}
 
+    public void onShow(){}
+
     public void loginPressed(ActionEvent e){
         System.out.println("Login Pressed");
         parent.setScreen(ScreenController.LoginID);

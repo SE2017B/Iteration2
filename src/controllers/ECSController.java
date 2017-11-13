@@ -16,4 +16,6 @@ public class ECSController implements ControllableScreen{
     private Button btnaccept;
 
     public void init(){}
+
+    public void onShow(){}
 }

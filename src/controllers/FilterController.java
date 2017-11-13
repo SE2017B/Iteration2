@@ -21,7 +21,7 @@ public class FilterController implements ControllableScreen{
     private CheckBox checkBoxExits;
 
     @FXML
-    private Button btncancel;
+    private Button btnCancel;
 
     public void init(){}
 

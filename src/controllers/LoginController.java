@@ -3,8 +3,10 @@ package controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import service.Staff;
 
 public class LoginController implements ControllableScreen{
     private ScreenController parent;
@@ -19,6 +21,9 @@ public class LoginController implements ControllableScreen{
     private Button btncancel;
 
     @FXML
+    private Label failLabel;
+
+    @FXML
     private TextField txtfldLogin;
 
     @FXML
@@ -26,8 +31,25 @@ public class LoginController implements ControllableScreen{
 
     public void init(){}
 
+    public void onShow(){
+        failLabel.setVisible(false);
+    }
+
+    //Verify the username and password, then set up the admin menu for that user
     public void enterPressed(ActionEvent e){
-        parent.setScreen(ScreenController.AdminMenuID);
+        //Look for the user in the master list of staff members
+        //todo
+
+        //if the password matches
+        if(true) {
+            parent.setScreen(ScreenController.AdminMenuID);
+
+            ((AdminMenuController) parent.getController(ScreenController.AdminMenuID))
+                    .setForStaff(new Staff("jsmith", "password", "Food", "John Smith", 1234));
+        }
+        else{
+            failLabel.setVisible(true);
+        }
     }
 
     public void cancelPressed(ActionEvent e){

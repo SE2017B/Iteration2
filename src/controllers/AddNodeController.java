@@ -7,6 +7,11 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import java.lang.*;
+import a_star.Node;
+import a_star.Node.*;
+
+import java.util.List;
 
 public class AddNodeController implements ControllableScreen{
     private ScreenController parent;
@@ -17,6 +22,7 @@ public class AddNodeController implements ControllableScreen{
     private String building;
     private String nodeType;
     private String name;
+
 
     public void setParentController(ScreenController parent){
         this.parent = parent;
@@ -127,7 +133,17 @@ public class AddNodeController implements ControllableScreen{
 
     public void init(){}
 
+
+
     public void enterPressed(ActionEvent e){
+        //Setting the variables equal to values read from UI
+//        nodeID = txtfldID.getText();
+//        x = Integer.parseInt(txtfldX.getText());
+//        y = Integer.parseInt(txtfldY.getText());
+//        name = txtfldName.getText();
+
+
+
         System.out.println("Enter Pressed");
         parent.setScreen(ScreenController.AdminMenuID);
     }
@@ -141,7 +157,8 @@ public class AddNodeController implements ControllableScreen{
     void buildingSelected(ActionEvent e)
     {
         System.out.println("Building Selected");
-        String building = ((MenuItem) e.getSource()).getText();
+        building = ((MenuItem) e.getSource()).getText();
+        //Setting the variables equal to values read from UI
         buildingDropDown.setText(building);
     }
 
@@ -149,7 +166,8 @@ public class AddNodeController implements ControllableScreen{
     void floorSelected(ActionEvent e)
     {
         System.out.println("Floor Selected");
-        String floor = ((MenuItem) e.getSource()).getText();
+        floor = ((MenuItem) e.getSource()).getText();
+        //Setting the variables equal to values read from UI
         floorDropDown.setText(floor);
     }
 
@@ -157,14 +175,16 @@ public class AddNodeController implements ControllableScreen{
     void nodeTypeSelected(ActionEvent e)
     {
         System.out.println("Node Type Selected");
-        String nodeType = ((MenuItem) e.getSource()).getText();
+        nodeType = ((MenuItem) e.getSource()).getText();
+        //Setting the variables equal to values read from UI
         nodeTypeDropDown.setText(nodeType);
     }
     @FXML
     void filledNodeID(ActionEvent e)
     {
-        String typedNodeID = txtfldID.getText();
-        System.out.println(typedNodeID);
+        //Setting the variables equal to values read from UI
+        nodeID = txtfldID.getText();
+        System.out.println(nodeID);
     }
 
 

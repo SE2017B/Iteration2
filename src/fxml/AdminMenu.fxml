@@ -34,7 +34,7 @@
 						<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
 					</GridPane.margin>
 				</Button>
-				<Button fx:id="btnEdit" mnemonicParsing="false" onAction="#editPressed" prefHeight="70.0" prefWidth="219.0" text="Edit Map" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+				<Button fx:id="btnEdit" mnemonicParsing="false" onAction="#editPressed" prefHeight="70.0" prefWidth="219.0" text="Add Nodes" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
 					<font>
 						<Font size="25.0" />
 					</font>
@@ -84,6 +84,11 @@
                <font>
                   <Font size="24.0" />
                </font></Label>
+            <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deletePressed" prefHeight="70.0" prefWidth="219.0" text="Delete Nodes" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
 			</children>
 		</GridPane>
 	</children>

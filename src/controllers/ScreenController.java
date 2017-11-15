@@ -37,6 +37,8 @@ public class ScreenController extends StackPane {
     public static String RequestFile = "/fxml/Request.fxml";
     public static String ThankYouID = "ThankYou";
     public static String ThankYouFile = "/fxml/ThankYou.fxml";
+    public static String DeleteID = "Delete";
+    public static String DeleteFile = "/fxml/DeleteNode.fxml";
 
     private HashMap<String, Node> screens = new HashMap<String, Node>();
     private HashMap<String, ControllableScreen> controllers = new HashMap<String, ControllableScreen>();

@@ -33,6 +33,9 @@ public class AdminMenuController implements ControllableScreen{
     private Button btnEdit;
 
     @FXML
+    private Button btnDelete;
+
+    @FXML
     private Button btnLogout;
 
     @FXML
@@ -70,6 +73,12 @@ public class AdminMenuController implements ControllableScreen{
     public void editPressed(ActionEvent e){
         System.out.println("Edit Pressed");
         parent.setScreen(ScreenController.AddNodeID);
+    }
+
+    //moves to edit node menu when button is pressed
+    public void deletePressed(ActionEvent e){
+        System.out.println("Edit Pressed");
+        parent.setScreen(ScreenController.DeleteID);
     }
 
     //logs out when button is pressed

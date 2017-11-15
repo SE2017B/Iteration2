@@ -181,5 +181,8 @@ public class HospitalMap{
         return output;
     }
 
-    //Cache for stuff
+    public void deleteNode(Node node){
+        map.remove(node.getID());
+        System.out.println("Deleted from HospitalMap");;
+    }
 }

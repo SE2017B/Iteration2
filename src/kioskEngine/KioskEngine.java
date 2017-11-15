@@ -53,7 +53,11 @@ public class KioskEngine{
 
     public void deleteNodes(ObservableList<Node> nodes){
         for(Node node : nodes){
-
+            nodeDatabase.deleteNode(node);
+            for(Node connection : node.getConnections().keySet()){
+                connection.getConnections().remove(node);
+            }
+            map.deleteNode(node);
         }
     }
 

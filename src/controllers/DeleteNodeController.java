@@ -8,6 +8,7 @@
 
 package controllers;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -63,16 +64,23 @@ public class DeleteNodeController implements ControllableScreen {
             nodeCheckBoxes.add(box);
 
         }
+        deleteList.getItems().clear();
     }
 
     public void nodeForDelete(ActionEvent e) {
-        deleteList.getItems().add(((NodeCheckBox) e.getSource()).getNode());
+        NodeCheckBox box = (NodeCheckBox)e.getSource();
+        if(box.isSelected())
+            deleteList.getItems().add(box.getNode());
+        else
+            deleteList.getItems().remove(box.getNode());
     }
 
 
     public void enterPressed(ActionEvent e) {
         System.out.println("Delete Nodes");
+        System.out.println(deleteList.getItems());
         parent.getEngine().deleteNodes(deleteList.getItems());
+        parent.setScreen(ScreenController.AdminMenuID);
     }
 
     //comands for button cancel press
